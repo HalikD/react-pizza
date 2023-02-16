@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+}
+
+.category {
+  &__list {
+    display: flex;
+
+    @media screen and (max-width: 1280px) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 980px) {
+      justify-content: flex-start;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    background-color: #f9f9f9;
+    padding: 13px 30px;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover {
+      background-color: darken(#f9f9f9, 5%);
+    }
+  }
+
+  &__active {
+    background-color: #282828;
+    color: #fff;
+
+    &:hover {
+      background-color: lighten(#282828, 5%);
+    }
+  }
+}

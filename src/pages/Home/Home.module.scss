@@ -1,0 +1,32 @@
+.title {
+  margin: 2rem 0;
+  font-weight: 800;
+  font-size: 32px;
+
+  @media screen and (max-width: 1280px) {
+    text-align: center;
+  }
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem 1rem;
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 1280px) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
