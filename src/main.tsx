@@ -6,8 +6,7 @@ import App from "./App";
 import "@/styles/main.scss";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  // <React.StrictMode>
-  //
-  // </React.StrictMode>
-  <App />
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
